@@ -162,7 +162,7 @@ ylabel('Amplitude')
 sound(tone, p.Fs)
 
 %% Exercises with tones
-% 1. Make the tone 200 ms long
+% 1. Make the tone 500 ms long
 % 2. Change the tone frequency
 
 %% %%%% Present one trial %%%%
@@ -195,12 +195,14 @@ timeBlank = Screen('Flip', window, timeIm + p.imDur - slack);
 rt = secs - timeIm;
 responseKey = find(keyCode);
 
-%% Exercises with the trial sequence
-% 1. Set the image to be presented exactly 1 s after the tone
-% 2. Switch the order of the tone and the image. Now the image should be 1
+%% Exercises with stimulus presentation and trial sequence
+% 1. Change the location where the image is presented to somewhere in the
+% upper right quadrant of the screen
+% 2. Set the image to be presented exactly 1 s after the tone
+% 3. Switch the order of the tone and the image. Now the image should be 1
 % s after the tone.
-% 3. Update the RT so that it tells us how fast the observer responded to
-% the tone. (If you'd like, you can change the task instructions as well.)
+% 4. Update the RT so that it tells us how fast the observer responded to
+% the tone. (You can change the task instructions as well.)
 
 %% Store trial info
 trialsHeaders = {'RT','ResponseKey'};
